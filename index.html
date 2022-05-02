@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção em Equipamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <div>
+            <img src="imagens/Logo-porto.png" alt="">
+            </div>
+        <h1>Manutenção em Equipamentos</h1>
+        <h3>Equipamentos Quebrados por Dia</h3>
+    </header>
+
+    <!-- ESCOLHA DOS EQUIPAMENTOS -->
+    <section>
+        <h3>Selecione os Equipamentos</h3>
+        <div class="equipamentos-manut">
+            <input type="radio"  name="equipamento"id="RTG">
+            <label for="RTG">RTG</label>
+            <input type="radio" name="equipamento" id="STS">
+            <label for="STS">STS</label>
+            <input type="radio" name="equipamento" id="EV">
+            <label for="EV">EV</label>
+            <input type="radio" name="equipamento" id="RS">
+            <label for="RS">RS</label>
+        </div>
+        <!-- BOTOES PARA ADICIONAR/REMOVER EQUIPAMENTOS -->
+        <div class="botoes-manut">
+            <button id="adicionar">Adicionar</button>
+            <button id="remover">Remover</button>
+        </div>
+    </section>
+    <!-- TABELA -->
+    <section id="table">
+        <table>
+            <!-- TAG DE LINHA -->
+            <tr>
+                <!-- TAG DE COLUNA DE CABEÇALHO -->
+                <th>Equipamentos</th><th>Quantidade</th>
+            </tr>
+            <tr>
+                <!-- TAG DE COLUNA COMUM -->
+                <td>RTG</td><td id="vezesRTG"></td>
+            </tr>
+            <tr>
+                <td>STS</td><td id="vezesSTS"></td>
+            </tr>
+            <tr>
+                <td>EV</td><td id="vezesEV"></td>
+            </tr>
+            <tr>
+                <td>RS</td><td id="vezesRS"></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <button id="export">Planilha</button>
+    </section>
+    
+</body>
+    <script src="script.js"></script>
+</html>
